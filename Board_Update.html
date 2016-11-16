@@ -1,10 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>글 수정</title>
+<title>Edit Context</title>
 </head>
 
 <script>
@@ -26,7 +24,7 @@ body {
 </style>
 <body>
 
-	<table summary="글수정 전체 테이블">
+	<table summary="Edit Context Table">
 		<form name="BoardUpdateForm" method="post" action="Board_Write_action.html" onsubmit="return boardUpdateCheck();" >
 		
    		<colgroup>
@@ -38,7 +36,7 @@ body {
 		<table summary="테이블 구성" >
 		<caption>글 수정하기</caption>	
     		<tr>
-				<td>작성자</td>
+				<td>Editor</td>
 				<td><input type=text name=name size=10 maxlength=8></td>
 			</tr>
 			<tr>
@@ -46,19 +44,19 @@ body {
 	 			<td><input type=text name=email size=30></td>
     		</tr>
     		<tr>
-     			<td>홈페이지</td>
+     			<td>belong</td>
      			<td><input type=text name=homepage size=30></td>
     		</tr>
     		<tr>
-     			<td>제 목</td>
+     			<td>Title</td>
      			<td><input type=text name=title></td>
     		</tr>
     		<tr>
-     			<td>내 용</td>
+     			<td>Context</td>
      			<td><textarea name=content rows ="10" cols="100"></textarea></td>
     		</tr>
     		<tr>
-     			<td>비밀번호</td> 
+     			<td>SecretNumber</td> 
      			<td><input type=password name=password size=15 maxlength=15></td>
     		</tr>
     		<tr>
@@ -66,9 +64,9 @@ body {
     		</tr>
     		<tr>
      			<td colspan="2"><div align="center">
-     			<input type="submit" value="수정 완료">&nbsp;&nbsp;
-				<input type=reset value="다시 수정"> 
-         		<input type="button" value="뒤로" onclick="move('Board_List.html');"></div>
+     			<input type="submit" value="EditConfirm">&nbsp;&nbsp;
+				<input type=reset value="Initialize"> 
+         		<input type="button" value="BackTolist" onclick="move('index.html');"></div>
      			</td>
     		</tr> 
 		</table>
